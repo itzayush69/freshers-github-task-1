@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRM Kzilla Club</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="club-heading">The official Mozilla club of SRM</h1>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let clubName = prompt("Enter the club name:");
+            if (clubName && clubName.toLowerCase() === "srmkzila") {
+                document.getElementById("club-heading").textContent = "SRMKzilla";
+            }
+        });
+    </script>
+</body>
+</html>
